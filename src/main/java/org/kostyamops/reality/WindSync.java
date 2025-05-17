@@ -106,10 +106,10 @@ public class WindSync {
             reader.close();
 
             JsonObject json = JsonParser.parseString(response.toString()).getAsJsonObject();
-            plugin.getLogger().info("Full weather JSON: " + json);
+            // plugin.getLogger().info("Full weather JSON: " + json);
             return json;
         } catch (Exception e) {
-            plugin.getLogger().warning("Weather info error: " + e.getMessage());
+            // plugin.getLogger().warning("Weather info error: " + e.getMessage());
             return null;
         }
     }

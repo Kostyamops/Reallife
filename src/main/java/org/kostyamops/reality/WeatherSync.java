@@ -63,7 +63,7 @@ public class WeatherSync {
 
                     currentWeather = weatherCondition;
 
-                    plugin.getLogger().info("Weather in " + city + ": " + weatherCondition);
+                    // plugin.getLogger().info("Weather in " + city + ": " + weatherCondition);
 
                     updateWorldWeather(weatherCondition);
                 }
@@ -89,7 +89,7 @@ public class WeatherSync {
             JsonObject jsonResponse = JsonParser.parseString(response.toString()).getAsJsonObject();
             return jsonResponse;
         } catch (Exception e) {
-            plugin.getLogger().warning("Weather info err: " + e.getMessage());
+            // plugin.getLogger().warning("Weather info err: " + e.getMessage());
             return null;
         }
     }
