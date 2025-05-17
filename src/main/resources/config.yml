@@ -1,0 +1,18 @@
+# Настройки плагина Reality
+
+# Синхронизация погоды
+weather:
+  sync: false # Вкл/Выкл
+  city: "Moscow" # Город, по которому происходит синхронизация
+  api_key: "" # Api ключ для сайта openweathermap.org
+
+# Синхронизация времени
+time:
+  sync: false # Вкл/Выкл
+  zone: "GMT+0" # Часовой пояс
+
+# Настройки ветра
+wind:
+  sync: false
+  strength_multiplier: 1.0  # Множитель силы ветра
+  check_distance: 20

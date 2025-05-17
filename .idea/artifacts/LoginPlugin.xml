@@ -2,7 +2,7 @@
   <artifact type="jar" build-on-make="true" name="LoginPlugin">
     <output-path>$PROJECT_DIR$/../1.20.2 server for testing joutak login/plugins</output-path>
     <root id="archive" name="LoginPlugin.jar">
-      <element id="module-output" name="JouTakTemplate" />
+      <element id="module-output" name="PluginTemplate" />
     </root>
   </artifact>
 </component>

@@ -1,6 +1,36 @@
-name: JouTakTemplate
-version: '${project.version}'
-main: org.joutak.joutaktemplate.JouTakTemplate
-api-version: '1.20'
+name: Reality
+main: org.kostyamops.reality.Main
+version: 1.0-SNAPSHOT
+api-version: 1.21
+
 commands:
-  joutest: {}
+  reality:
+    description: Manage reality-related features
+    # usage: /<command> <time|weather|wind|info>
+    aliases: [r]
+  reality time:
+    description: Manage time synchronization.
+    usage: "/reality time <on|off|GMT+X>"
+  reality weather:
+    description: Manage weather synchronization.
+    usage: "/reality weather <on|off|city>"
+  reality wind:
+    description: Control the wind synchronization.
+    usage: "/reality wind <on|off|set>"
+  reality info:
+    description: Manage weather synchronization.
+    usage: "/reality weather <set|sync>"
+
+permissions:
+  reality.time:
+    description: Time synchronization commands
+    default: true
+  reality.weather:
+    description: Weather synchronization commands
+    default: true
+  reality.wind:
+    description: Wind synchronization commands
+    default: true
+  reality.info:
+    description: Information about plugin
+    default: true
